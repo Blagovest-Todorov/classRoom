@@ -37,6 +37,8 @@ namespace ClassroomProject
 
             if (student != null)
             {
+                // i was forgotten to remove the studetn from the curr List
+                students.Remove(student);
                 return $"Dismissed student {student.FirstName} {student.LastName}";
             }
 
